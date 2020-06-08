@@ -1,0 +1,18 @@
+{
+    "apps": [
+      {
+        "name": "netease-music-ssr",
+        "max_memory_restart": "300M",
+        "script": "server/index.js",
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": 3001,
+          "HOST": "0.0.0.0"
+        },
+        "instances": 0,
+        "exec_mode": "cluster",
+        "autorestart": true
+      }
+    ]
+  }
+  
